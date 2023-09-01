@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/Catalogo/static/css/main.cc7e7437.css",
+    "main.js": "/Catalogo/static/js/main.5141b68a.js",
+    "static/js/496.fc7109f0.chunk.js": "/Catalogo/static/js/496.fc7109f0.chunk.js",
+    "static/media/Banner.png": "/Catalogo/static/media/Banner.f496e9106dab3f6418a8.png",
+    "static/media/madagaskarLogoBordeBlanco.svg": "/Catalogo/static/media/madagaskarLogoBordeBlanco.3fb9e592cdd357fe979a36e3f788e1a3.svg",
+    "static/media/Retroceder.png": "/Catalogo/static/media/Retroceder.7b08f1b15047221358e6.png",
+    "static/media/Recomend.webp": "/Catalogo/static/media/Recomend.60a36f360afcf74dff4f.webp",
+    "static/media/Insanibu.ttf": "/Catalogo/static/media/Insanibu.b802102b84d620db4908.ttf",
+    "static/media/madagaskarLogoAColor.svg": "/Catalogo/static/media/madagaskarLogoAColor.5f4418dbfe7034a7c5ce095242bb53fc.svg",
+    "static/media/madagaskarLogoBlanco.svg": "/Catalogo/static/media/madagaskarLogoBlanco.0d329c96c3d6f25d5c5b026c3bb32b40.svg",
+    "static/media/barraLarga.svg": "/Catalogo/static/media/barraLarga.b00ea8455d06151cbc8da8d4d2623ab1.svg",
+    "static/media/barraBusqueda.svg": "/Catalogo/static/media/barraBusqueda.09c04e2a97e394c114fbef0da2a50271.svg",
+    "static/media/Arena.svg": "/Catalogo/static/media/Arena.27ea1f2044d8a55dcf03c660d18d8492.svg",
+    "static/media/Kennel.svg": "/Catalogo/static/media/Kennel.968fb9a73ee971eec70eb7f3011c72ab.svg",
+    "static/media/Cepillos.svg": "/Catalogo/static/media/Cepillos.3cd3f944506050853b0a95a33d3d1fa8.svg",
+    "static/media/WhatsApp.svg": "/Catalogo/static/media/WhatsApp.3ea89674648d5ecf889bb7d372e008a4.svg",
+    "static/media/Cama.svg": "/Catalogo/static/media/Cama.b4fb7827ed953cc8b744cf7298cfdfbf.svg",
+    "static/media/Instagram.svg": "/Catalogo/static/media/Instagram.fb6f0aec61181353a241edb402053175.svg",
+    "static/media/Perro.svg": "/Catalogo/static/media/Perro.06a17e05f55e6ec7ea41a9e85138a479.svg",
+    "static/media/Farmacia.svg": "/Catalogo/static/media/Farmacia.3fd7363e49ab743aea2b0aa917214765.svg",
+    "static/media/TikTok.svg": "/Catalogo/static/media/TikTok.8857b412245dfc7de135c7f16855db60.svg",
+    "static/media/Cosmeticos.svg": "/Catalogo/static/media/Cosmeticos.aa065379e9829c328503cae0a736e557.svg",
+    "static/media/Snacks.svg": "/Catalogo/static/media/Snacks.9530d03857413c693e17f8db14b1ff05.svg",
+    "static/media/lupa_no_encontrado.svg": "/Catalogo/static/media/lupa_no_encontrado.ff95930f77c6e576f7089a04c6d753c7.svg",
+    "static/media/Gato.svg": "/Catalogo/static/media/Gato.3cbced02e9ca9040d27966552a8ea52c.svg",
+    "static/media/Alimento.svg": "/Catalogo/static/media/Alimento.ac06ed6d9e2e64cbb1b74cad348dcda4.svg",
+    "static/media/Plato.svg": "/Catalogo/static/media/Plato.0288252abd3ed914eb26fb9dd93f1c91.svg",
+    "index.html": "/Catalogo/index.html",
+    "static/media/lupa.svg": "/Catalogo/static/media/lupa.0b0b72631d88e74cc2b86d3401644dd8.svg",
+    "static/media/Juguetes.svg": "/Catalogo/static/media/Juguetes.f04f10eaa8bf85ad262521f51a9bd43e.svg",
+    "static/media/botonPasar.svg": "/Catalogo/static/media/botonPasar.705e73188b146db9b6913e137912ba62.svg",
+    "main.cc7e7437.css.map": "/Catalogo/static/css/main.cc7e7437.css.map",
+    "main.5141b68a.js.map": "/Catalogo/static/js/main.5141b68a.js.map",
+    "496.fc7109f0.chunk.js.map": "/Catalogo/static/js/496.fc7109f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc7e7437.css",
+    "static/js/main.5141b68a.js"
+  ]
+}
