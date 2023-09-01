@@ -1,0 +1,63 @@
+@media (min-width: 1025px) {
+    .Reco{
+        background-color: #F2F2F2;
+        padding-bottom: 50px;
+    }
+    .titleReco{
+        margin-left: 180px;
+        padding-top: 50px;
+        font-family: 'insaniburger';
+        font-weight: 500;
+    }
+    .RecomendReco{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+    .Reco{
+        background-color: #F2F2F2;
+        padding-bottom: 50px;
+    }
+    .titleReco{
+        margin-left: 80px;
+        padding-top: 50px;
+        font-family: 'insaniburger';
+        font-weight: 500;
+    }
+    .RecomendReco{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 300px) and (max-width:425px){
+    .Reco{
+        background-color: #F2F2F2;
+        padding-bottom: 50px;
+    }
+    .titleReco{
+        margin-left: 50px;
+        padding-top: 20px;
+        font-family: 'insaniburger';
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .RecomendReco{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}

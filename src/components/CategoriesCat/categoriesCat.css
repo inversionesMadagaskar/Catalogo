@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,900&display=swap');
+
+@media (min-width: 1025px) {
+  :root {
+    --slide-amount: 1200;
+  }
+  .CategoriesCat{
+    width: 84%;
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  .slider-icon-leftCat, .slider-icon-rightCat{
+    background: none;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .slider-icon-leftCat{
+    left: 0;
+  }
+  .slider-icon-rightCat{
+    right: 0;
+  }
+  .slider-icon-leftCat:hover, .slider-icon-rightCat:hover{
+    opacity: 1;
+  }
+  #sliderCat{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+  }
+  #sliderCat.active {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+  }
+  .linkCat{
+    text-decoration: none;
+    color: black;
+  }
+  .slider-cardCat{
+    width: 170px;
+    height: 65%;
+    background: rgb(240 240 240 / 80%);
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+    cursor: pointer;
+  }
+  .active{
+    background-color: #F2F2F2;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .slider-card-imageCat{
+    width: 100%;
+    height: 160px;
+    display: grid;
+    place-content: center;
+  }
+  .imgCat{
+    width: 50px;
+    height: 50px;
+  }
+  .slider-card-titleCat{
+    font-weight: 800;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+  :root {
+    --slide-amount: 500;
+  }
+  .CategoriesCat{
+    width: 88%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  .slider-icon-leftCat, .slider-icon-rightCat{
+    background: none;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .slider-icon-leftCat{
+    left: 0;
+  }
+  .slider-icon-rightCat{
+    right: 0;
+  }
+  .slider-icon-leftCat:hover, .slider-icon-rightCat:hover{
+    opacity: 1;
+  }
+  #sliderCat{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #sliderCat.active {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+  }
+  .linkCat{
+    text-decoration: none;
+    color: black;
+  }
+  .slider-cardCat{
+    width: 115px;
+    height: 55%;
+    background: rgb(240 240 240 / 80%);
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+  }
+  .active{
+    background-color: #F2F2F2;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .slider-card-imageCat{
+    width: 100%;
+    height: 120px;
+    display: grid;
+    place-content: center
+  }
+  .imgCat{
+    width: 50px;
+    height: 50px;
+  }
+  .slider-card-titleCat{
+    font-weight: 800;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@media (min-width: 300px) and (max-width:399px){
+  :root {
+    --slide-amount: 220;
+  }
+  .CategoriesCat{
+    width: 83%;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  .slider-icon-leftCat, .slider-icon-rightCat{
+    background: none;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 20px;
+    margin-bottom: 23px;
+  }
+  .slider-icon-leftCat{
+    left: 0;
+  }
+  .slider-icon-rightCat{
+    right: 0;
+  }
+  .slider-icon-leftCat:hover, .slider-icon-rightCat:hover{
+    opacity: 1;
+  }
+  #sliderCat{
+    width: 90%;
+    height: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+  }
+  #sliderCat.active {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+  }
+  .linkCat{
+    text-decoration: none;
+    color: black;
+  }
+  .slider-cardCat{
+    width: 50px;
+    height: 50px;
+    background: rgb(240 240 240 / 80%);
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .active{
+    background-color: #F2F2F2;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .slider-card-imageCat{
+    width: 100%;
+    height: 47px;
+    display: grid;
+    place-content: center;
+  }
+  .imgCat{
+    width: 17px;
+    height: 17px;
+  }
+  .slider-card-titleCat{
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@media (min-width: 400px) and (max-width:499px){
+  :root {
+    --slide-amount: 220;
+  }
+  .CategoriesCat{
+    width: 80%;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  .slider-icon-leftCat, .slider-icon-rightCat{
+    background: none;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 20px;
+    margin-bottom: 23px;
+  }
+  .slider-icon-leftCat{
+    left: 0;
+  }
+  .slider-icon-rightCat{
+    right: 0;
+  }
+  .slider-icon-leftCat:hover, .slider-icon-rightCat:hover{
+    opacity: 1;
+  }
+  #sliderCat{
+    width: 90%;
+    height: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+  }
+  #sliderCat.active {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+  }
+  .linkCat{
+    text-decoration: none;
+    color: black;
+  }
+  .slider-cardCat{
+    width: 54px;
+    height: 54px;
+    background: rgb(240 240 240 / 80%);
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .active{
+    background-color: #F2F2F2;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .slider-card-imageCat{
+    width: 100%;
+    height: 47px;
+    display: grid;
+    place-content: center;
+  }
+  .imgCat{
+    width: 19px;
+    height: 19px;
+  }
+  .slider-card-titleCat{
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+}

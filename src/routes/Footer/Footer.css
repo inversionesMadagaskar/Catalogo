@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@font-face {
+    font-family: 'insaniburger';
+    src: url('../../font/insaniburger/Insanibu.ttf');
+}
+
+@media (min-width: 1025px) {
+    .Footer{
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+        height: 550px;
+        background-color: #FFB355;
+    }
+    .ImgLogoFoot{
+        width: 500px;
+        height: auto;
+        margin-right: 0px;
+    }
+    .contFoot{
+        height: 450px;
+    }
+    .contactoListaFoot{
+        text-align: center;
+        padding-right: 40px;
+        color: white;
+        font-family: 'insaniburger';
+        font-weight: 500;
+    }
+    .ContactoFoot{
+        display: block;
+        padding-right: 0;
+        padding-bottom: 170px;
+    }
+    .linkFoot{
+        text-decoration: none;
+        color: black;
+    }
+    .listaFoot{
+        display: flex;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+    }
+    .iconoFooter{
+        width: 45px;
+        height: auto;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .blockListaFoot{
+        display: block;
+        line-height: 5%;
+    }
+    .listaContFoot{
+        display: flex;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        height: 25px;
+    }
+    .direFooter{
+        display: block;
+        width: 500px;
+    }
+    .direTextFoot{
+        text-align: start;
+        color: white;
+        font-family: 'insaniburger';
+        font-weight: 500;
+    }
+    .textDireFoot{
+        width: 400px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+    }
+    .ubicacionFoot{
+        width: 300px;
+        height: 250px;
+        border-radius: 10%;
+    }
+    .listaFootubiText{
+        display: none;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+    .Footer{
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+        height: 380px;
+        background-color: #FFB355;
+    }
+    .ImgLogoFoot{
+        width: 230px;
+        height: auto;
+        margin-right: 0px;
+    }
+    .contFoot{
+        height: 450px;
+        padding-top: 130px;
+    }
+    .contactoListaFoot{
+        text-align: center;
+        padding-right: 20px;
+        color: white;
+        font-family: 'insaniburger';
+        font-weight: 500;
+        font-size: 27px;
+    }
+    .ContactoFoot{
+        display: block;
+        padding-right: 0;
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+    .linkFoot{
+        text-decoration: none;
+        color: black;
+    }
+    .listaFoot{
+        display: flex;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .iconoFooter{
+        width: 35px;
+        height: auto;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    .blockListaFoot{
+        display: block;
+        line-height: 5%;
+    }
+    .listaContFoot{
+        display: flex;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        height: 25px;
+    }
+    .direFooter{
+        display: block;
+        width: 250px;
+    }
+    .direTextFoot{
+        text-align: start;
+        color: white;
+        font-family: 'insaniburger';
+        font-weight: 500;
+        font-size: 27px;
+    }
+    .textDireFoot{
+        width: 210px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+    }
+    .ubicacionFoot{
+        width: 190px;
+        height: 130px;
+        border-radius: 10%;
+    }
+    .listaFootubiText{
+        display: none;
+    }
+}
+
+@media (min-width: 300px) and (max-width:425px){
+    .Footer{
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        background-color: #FFB355;
+    }
+    .ImgLogoFoot{
+        width: 120px;
+        height: auto;
+        position: relative;
+        left: 130px;
+        top: 100px;
+    }
+    .contFoot{
+        height: 450px;
+        position: relative;
+        right: 100px;
+        top: 100px;
+    }
+    .contactoListaFoot{
+        text-align: center;
+        padding-right: 10px;
+        color: white;
+        font-family: 'insaniburger';
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .ContactoFoot{
+        display: block;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+    .linkFoot{
+        text-decoration: none;
+        color: black;
+    }
+    .listaFoot{
+        display: flex;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+    }
+    .listaFootubiText{
+        display: flex;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        width: 150px;
+    }
+    .iconoFooter{
+        width: 15px;
+        height: auto;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .iconoFooterUbi{
+        width: 15px;
+        height: auto;
+        padding-right: 5px;
+        padding-top: 7px;
+        padding-bottom: 10px;
+    }
+    .blockListaFoot{
+        display: block;
+        line-height: 0;
+
+    }
+    .listaContFoot{
+        display: flex;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        height: 15px;
+    }
+    .direFooter{
+        display: block;
+        width: 100px;
+    }
+    .direTextFoot{
+        text-align: start;
+        color: white;
+        font-family: 'insaniburger';
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .textDireFoot{
+        width: 150px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+    }
+    .ubicacionFoot{
+        display: none;
+    }
+}
+

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+@font-face {
+    font-family: 'insaniburger';
+    src: url('../../font/insaniburger/Insanibu.ttf');
+}
+
+@media (min-width: 1025px) {
+    .linkPr{
+        text-decoration: none;
+        color: black;
+    }
+    .contornoPr{
+        background-color: white;
+        margin-left: 0;
+        margin-right: 0;
+        width: 300PX;
+        height: 450px;
+    }
+    .imgPr{
+        width: 300px;
+        height: auto;
+    }
+    .textPr{
+        text-align: center;
+    }
+    .titlePr{
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 100%;
+        margin: 5px;
+    }
+    .subPr{
+        font-size: 19px;
+        font-weight: 600;
+        color: rgb(94, 94, 94);
+        font-family: 'Urbanist', sans-serif;
+        margin: 5px;
+        line-height: 100%;
+    }
+    .pricePr{
+        font-size: 22px;
+        font-weight: 800;
+        color: #FF8022;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+    .linkPr{
+        text-decoration: none;
+        color: black;
+    }
+    .contornoPr{
+        background-color: white;
+        margin-left: 0;
+        margin-right: 0;
+        width: 200PX;
+        height: 300px;
+    }
+    .imgPr{
+        width: 180px;
+        height: auto;
+    }
+    .textPr{
+        text-align: center;
+    }
+    .titlePr{
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 100%;
+        margin: 0;
+    }
+    .subPr{
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(94, 94, 94);
+        font-family: 'Urbanist', sans-serif;
+        margin: 0;
+        line-height: 100%;
+    }
+    .pricePr{
+        font-size: 19px;
+        font-weight: 800;
+        color: #FF8022;
+        margin: 0;
+    }
+}
+
+@media (min-width: 300px) and (max-width:425px){
+    .linkPr{
+        text-decoration: none;
+        color: black;
+    }
+    .contornoPr{
+        background-color: white;
+        margin-left: 0;
+        margin-right: 0;
+        width: 85PX;
+        height: 140px;
+    }
+    .imgPr{
+        width: 70px;
+        height: auto;
+        display: flex;
+        margin: auto;
+    }
+    .textPr{
+        text-align: center;
+    }
+    .titlePr{
+        font-size: 9px;
+        word-wrap: break-all;
+        font-weight: 800;
+        line-height: 100%;
+        margin-bottom: 3px;
+    }
+    .subPr{
+        font-size: 7px;
+        font-weight: 600;
+        color: rgb(94, 94, 94);
+        font-family: 'Urbanist', sans-serif;
+        line-height: 100%;
+        margin: 0;
+    }
+    .pricePr{
+        font-size: 10px;
+        font-weight: 800;
+        color: #FF8022;
+        margin: 0;
+    }
+}

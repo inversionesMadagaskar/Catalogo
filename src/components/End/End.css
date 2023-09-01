@@ -1,0 +1,47 @@
+@media (min-width: 1025px) {
+    .End{
+        background-color: #FFB355;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgLogoEnd{
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) {
+    .End{
+        background-color: #FFB355;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgLogoEnd{
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media (min-width: 300px) and (max-width:425px){
+    .End{
+        background-color: #FFB355;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgLogoEnd{
+        width: 40px;
+        height: auto;
+    }
+}
