@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Product.css'
 
-const Product = ({item}) => {
+const Product = ({item, noDisp}) => {
 
   //Navegar al Id definido
   const handleClick = () => {
@@ -20,6 +20,7 @@ const Product = ({item}) => {
             <p className='titlePr'>{item.title}</p>
             <p className='subPr'>{item.subtitle}</p>
             <p className='pricePr'>{item.price}$</p>
+            <p className='subStock'>{item.stock === 0 ? 'NO DISPONIBLE' : null}</p>
           </div>    
       </div>
     </Link>

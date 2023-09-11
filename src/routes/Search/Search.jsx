@@ -7,6 +7,7 @@ import React from 'react'
 import Lupa from '../../image/lupa.svg'
 import { MdChevronLeft,MdChevronRight } from 'react-icons/md';
 import { useEffect, useState, useRef  } from "react"
+import diacriticless from 'diacriticless';
 import './Search.css'
 
 
@@ -20,7 +21,6 @@ const Search = () => {
   const inputRef = useRef(null);
   
 
-  
   //setBusqueda y filtrar
   const handleChange=e=>{
     setBusqueda(e.target.value);
@@ -39,11 +39,20 @@ const Search = () => {
   
   //filtro de buscador
   const filtrar = (terminoBusqueda) => {
-    var resultadosBusqueda=product.filter((elemento)=>{
-      if(elemento.title && elemento.title.toString().toLowerCase().includes(terminoBusqueda.toLowerCase()) || elemento.categories && elemento.categories.toString().toLowerCase().includes(terminoBusqueda.toLowerCase()) || elemento.subtitle && elemento.subtitle.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
-        return elemento
-      }
+    const normalizedTerminoBusqueda = diacriticless(terminoBusqueda.toLowerCase());
+  
+    const resultadosBusqueda = product.filter((elemento) => {
+      const titulo = diacriticless(elemento.title.toString().toLowerCase());
+      const categorias = diacriticless(elemento.categories.toString().toLowerCase());
+      const subtitulo = diacriticless(elemento.subtitle.toString().toLowerCase());
+  
+      return (
+        titulo.includes(normalizedTerminoBusqueda) ||
+        categorias.includes(normalizedTerminoBusqueda) ||
+        subtitulo.includes(normalizedTerminoBusqueda)
+      );
     });
+  
     setProducts(resultadosBusqueda);
     setResultados(resultadosBusqueda.length > 0 ? resultadosBusqueda : 'no disponible');
     setIndice(0); // Reiniciar el valor de indice a 0
@@ -64,7 +73,7 @@ const Search = () => {
   //Obtener productos
   useEffect(() =>{
     const peticionGet=async()=>{
-      await axios.get(`https://apimadagaskar-b588-dev.fl0.io/api/products`)
+      await axios.get(`https://apimadagaskar-2r5v-dev.fl0.io/api/products`)
       .then(response=>{
         setProducts(response.data);
         setProduct(response.data);
@@ -89,9 +98,9 @@ const Search = () => {
       <div>
         <div className='ContSe'>
           <div>
-            <img src={Buscador} className='barraSe'/>
+            <img src={Buscador} className='barraSe' alt=''/>
             <input className='inputSe' type='text' value={busqueda} onChange={handleChange} onKeyDown={handleKeyDown} ref={inputRef}></input>
-            <img className='buscarIconoSe' src={Lupa}></img>
+            <img className='buscarIconoSe' src={Lupa} alt=''></img>
             <button className='buscarSe' onClick={onClick}><p className='textBuscarSe'>BUSCAR</p></button>
           </div>
         </div>
@@ -105,7 +114,7 @@ const Search = () => {
         </div>
       ) : resultados === 'no disponible' ? (
         <div className='contenedorNoSe'>
-          <img className='lupaImgSe' src={NoLupa}></img>
+          <img className='lupaImgSe' src={NoLupa} alt=''></img>
           <p className='lupaTextSe'>No hay productos que coincidan con tu busqueda</p>
         </div>
       ) : (

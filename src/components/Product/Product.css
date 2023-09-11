@@ -37,10 +37,18 @@
         margin: 5px;
         line-height: 100%;
     }
+    .subStock{
+        font-size: 17px;
+        font-weight: 800;
+        color: #E90D00;
+        margin: 0;
+    }
     .pricePr{
         font-size: 22px;
         font-weight: 800;
         color: #FF8022;
+        margin-bottom: 0;
+        margin-top: 5px;
     }
 }
 
@@ -76,6 +84,12 @@
         font-family: 'Urbanist', sans-serif;
         margin: 0;
         line-height: 100%;
+    }
+    .subStock{
+        font-size: 15px;
+        font-weight: 800;
+        color: #E90D00;
+        margin: 0;
     }
     .pricePr{
         font-size: 19px;
@@ -119,6 +133,12 @@
         color: rgb(94, 94, 94);
         font-family: 'Urbanist', sans-serif;
         line-height: 100%;
+        margin: 0;
+    }
+    .subStock{
+        font-size: 7px;
+        font-weight: 800;
+        color: #E90D00;
         margin: 0;
     }
     .pricePr{

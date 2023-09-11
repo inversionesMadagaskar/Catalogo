@@ -10,6 +10,7 @@ import "./ProductId.css";
 import Pasar from "../../image/botonPasar.svg"
 import Retroceder from "../../image/Retroceder.png"
 
+
 const ProductId = () => {
 
   const location = useLocation();
@@ -95,12 +96,12 @@ const ProductId = () => {
     };
     getProduct();
   }, [id]);
-  
+   
   //Obtener todos los productos
   useEffect(() => {
     const peticionGet = async () => {
       try {
-        const response = await axios.get(`https://apimadagaskar-b588-dev.fl0.io/api/products`);
+        const response = await axios.get(`https://apimadagaskar-2r5v-dev.fl0.io/api/products`);
         setProducts(response.data);
       } catch (error) {
         console.log(error);
@@ -157,6 +158,8 @@ const ProductId = () => {
               ))}
               <p className="priceProductId">{product.price}$</p>
               <p className="priceTwoProductId">{product.priceTwo}</p>
+              <p className="dispoProductId">Preguntar disponibilidad</p>
+              <p className="dispoProductId">Precio sujeto a cambio</p>
             </div>
         </div>
         <div className="containerSelectId">

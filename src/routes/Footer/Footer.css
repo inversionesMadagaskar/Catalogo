@@ -198,10 +198,10 @@
         top: 100px;
     }
     .contFoot{
-        height: 450px;
+        height: 250px;
         position: relative;
         right: 100px;
-        top: 100px;
+        top: 10px;
     }
     .contactoListaFoot{
         text-align: center;

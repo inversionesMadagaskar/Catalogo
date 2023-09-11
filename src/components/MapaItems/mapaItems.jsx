@@ -11,14 +11,15 @@ const MapaItem = ({item}) => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    console.log("hola")
   };
 
   return (
-    <div className='mapas'>
+    <Link to={`/products/${item.cat}`} className='linkMapa' onClick={handleClick}><div className='mapas'>
       <div className='subMapa'>
-        <Link to={`/products/${item.cat}`} className='linkMapa' onClick={handleClick}><p className='textMap'>{item.title}</p></Link>
+        <p className='textMap' >{item.cat}</p>
       </div>
-    </div>
+    </div></Link>
   )
 }
 

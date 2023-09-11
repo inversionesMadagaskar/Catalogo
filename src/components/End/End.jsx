@@ -6,7 +6,7 @@ const End = () => {
   return (
     <div className='End'>
         <div>
-            <img className='imgLogoEnd' src={imgLogo}></img>
+            <img className='imgLogoEnd' src={imgLogo} alt=''></img>
         </div>
     </div>
   )

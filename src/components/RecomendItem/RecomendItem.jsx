@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import "./RecomendItem.css"
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const RecomendItem = ({item}) => {
 

@@ -126,6 +126,14 @@
         margin-bottom: 0;
         margin-top: 0;
     }
+    .dispoProductId{
+        margin: 10px auto 0px auto;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        width: 300px;
+        color: #E90D00;
+    }
     .containerSelectId{
         margin-top: 10px;
         width: 600px;
@@ -319,6 +327,14 @@
         color: #FF8022;
         margin-bottom: 0;
         margin-top: 0;
+    }
+    .dispoProductId{
+        margin: 0px auto 3px auto;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        width: 200px;
+        color: #E90D00;
     }
     .containerSelectId{
         margin-top: 10px;
@@ -514,6 +530,14 @@
         color: #FF8022;
         margin-bottom: 0;
         margin-top: 0;
+    }
+    .dispoProductId{
+        margin: 10px auto 3px auto;
+        font-size: 7px;
+        font-weight: 700;
+        text-align: center;
+        width: 100px;
+        color: #E90D00;
     }
     .containerSelectId{
         margin-top: 10px;

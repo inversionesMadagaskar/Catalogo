@@ -76,7 +76,7 @@ const Products = ( ) => {
     const getProducts = async () => {
       try {
         const res = await axios.get(
-          cat ? `https://apimadagaskar-b588-dev.fl0.io/api/products?category=${cat}` : 'https://apimadagaskar-b588-dev.fl0.io//api/products'
+          cat ? `https://apimadagaskar-2r5v-dev.fl0.io/api/products?category=${cat}` : 'https://apimadagaskar-2r5v-dev.fl0.io/api/products'
         );
         setProducts(res.data);
         setPaginaActual(1); // Restablecer la página actual a 1
@@ -95,8 +95,8 @@ const Products = ( ) => {
 
   //Para mapear
   const productosFiltrados = ordenarProductos(products, orden);
-  const productosStock = productosFiltrados.filter((products) => products.stock > 0);
-  const productosActuales = productosStock.slice(indice, indice + 12);
+  const productosStock = productosFiltrados.filter((products) => products.stock >= 0);
+  const productosActuales = productosFiltrados.slice(indice, indice + 12);
 
   return (
     <div className='ProductsPro'>

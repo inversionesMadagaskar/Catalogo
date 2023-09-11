@@ -62,16 +62,17 @@
     }
     .subMapa{
         text-align: start;
-        width: 40px;
-        line-height: 5%;
+        width: 80px;
+        line-height: 0%;
     }
     .linkMapa{
         text-decoration: none;
-        color: black;
+        color: black;        
+        width: 80px;
     }
     .textMap{
         color: white;
-        font-size: 10px;
+        font-size: 7px;
         font-family: 'Montserrat', sans-serif;
     }
 }

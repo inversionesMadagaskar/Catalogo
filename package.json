@@ -1,6 +1,6 @@
 {
   "name": "catalogo",
-  "homepage": "https://danicameroo.github.io/CatalogoMadagaskar",
+  "homepage": "https://inversionesMadagaskar.github.io/Catalogo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
+    "diacriticless": "^1.0.1",
     "install": "^0.13.0",
     "mongodb": "^5.6.0",
     "npm": "^9.7.2",
@@ -56,4 +57,3 @@
     "webpack-cli": "^5.1.4"
   }
 }
-

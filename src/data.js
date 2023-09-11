@@ -10,7 +10,6 @@ import Kennel from './image/Kennel.svg'
 import Perro from './image/Perro.svg'
 import Platos from './image/Plato.svg'
 import Snacks from './image/Snacks.svg'
-import Recomend from './image/Recomend.webp'
 
 export const categories = [
     {
@@ -84,5 +83,6 @@ export const categories = [
         img: Arena,
         title: "ARENA",
         cat: "Arena",
-    },
+    }
 ];
+
