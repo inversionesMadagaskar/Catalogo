@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import "./ProductId.css";
 import Pasar from "../../image/botonPasar.svg"
 import Retroceder from "../../image/Retroceder.png"
+import { Helmet } from "react-helmet";
 
 
 const ProductId = () => {
@@ -120,78 +121,88 @@ const ProductId = () => {
   //para mapear
   const productosStock = filteredProducts.filter((products) => products.stock > 0);
   const productosActual = productosStock.slice(indice, indice + 4);
+  
   return (
-    <div className="ProductIdCont">
-      <div className="containerCatId">
-        <Link to="/products/Todos" className="linkCatLineId">
-          <p className="tituloCatId">Categorias</p>
-        </Link>
-        <img src={Right} className="rightIconId" alt=""/>
-        <p className="tituloCatId colorSubTituloId">Producto</p>
+    <>
+      <Helmet>
+          <meta property="og:title" content={product.title} />
+          <meta property="og:description" content={product.description} />
+          <meta property="og:image" content={product.image} />
+          <meta property="og:url" content={window.location.href} />
+      </Helmet>
+
+      <div className="ProductIdCont">
+        <div className="containerCatId">
+          <Link to="/products/Todos" className="linkCatLineId">
+            <p className="tituloCatId">Categorias</p>
+          </Link>
+          <img src={Right} className="rightIconId" alt=""/>
+          <p className="tituloCatId colorSubTituloId">Producto</p>
+        </div>
+        <div className="ProductId">
+          <div className="containerIdUno" >
+            {product.img?.length > 1 ? (
+              <>
+              <div className="imgContId" ref={sliderRefId}>
+                {product.img.map((item) => (
+                    <img src={item} className="imgProductCarrId"  alt="" />
+                ))}
+                </div>
+                <div className="slider-imgContId">
+                  {currentSlide >= 1 && <button onClick={slideRight} className="botonSlider"><img src={Retroceder} className="slider-imgId" alt=""/></button>}
+                  {showSlideLeftButton && <button onClick={slideLeft} className="botonSlider"><img src={Pasar} className="slider-imgId" alt=""/></button>}
+                </div>
+              </>
+              ) : (
+              <img src={product.img} className="imgProductId" alt="" />
+            )}
+          </div>
+          <div className="containerIdDos">
+            <div className="containerTextId">
+              <div className="textContainerId">
+                <h1 className="titleProductId">{product.title}</h1>
+                <p className="subtitleProductId">{product.subtitle}</p>
+                <p className="descProductId">{product.desc}</p>
+                {product.comp && product.comp.map((item) => (
+                  <li key={item} className="compProductId">{item}</li>
+                ))}
+                <p className="priceProductId">{product.price}$</p>
+                <p className="priceTwoProductId">{product.priceTwo}</p>
+                <Link to={`https://api.whatsapp.com/send?phone=584244369887&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20${encodeURIComponent(product.title)}%20${encodeURIComponent(window.location.href)}`} target="_blank" className="linkId"><button className="dispoButtonProductId">Preguntar disponibilidad</button></Link>
+                <p className="dispoProductId">Precio sujeto a cambio</p>
+              </div>
+          </div>
+          <div className="containerSelectId">
+            <p className="selectTituloId">Presentacion: </p>
+            <select className="selectId">
+              {product.size?.map((obj) => (
+                <option value="obj" className="optionId">
+                  {obj}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="containerSelectId">
+            <p className="selectTituloId">Caracteristica: </p>
+            <select className="selectId">
+              {product.colorFlavor?.map((obj) => (
+                <option value="obj" className="optionId">
+                  {obj}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
       </div>
-      <div className="ProductId">
-        <div className="containerIdUno" >
-          {product.img?.length > 1 ? (
-            <>
-            <div className="imgContId" ref={sliderRefId}>
-              {product.img.map((item) => (
-                  <img src={item} className="imgProductCarrId"  alt="" />
-              ))}
-              </div>
-              <div className="slider-imgContId">
-                {currentSlide >= 1 && <button onClick={slideRight} className="botonSlider"><img src={Retroceder} className="slider-imgId" alt=""/></button>}
-                {showSlideLeftButton && <button onClick={slideLeft} className="botonSlider"><img src={Pasar} className="slider-imgId" alt=""/></button>}
-              </div>
-            </>
-            ) : (
-            <img src={product.img} className="imgProductId" alt="" />
-          )}
-        </div>
-        <div className="containerIdDos">
-          <div className="containerTextId">
-            <div className="textContainerId">
-              <h1 className="titleProductId">{product.title}</h1>
-              <p className="subtitleProductId">{product.subtitle}</p>
-              <p className="descProductId">{product.desc}</p>
-              {product.comp && product.comp.map((item) => (
-                <li key={item} className="compProductId">{item}</li>
-              ))}
-              <p className="priceProductId">{product.price}$</p>
-              <p className="priceTwoProductId">{product.priceTwo}</p>
-              <p className="dispoProductId">Preguntar disponibilidad</p>
-              <p className="dispoProductId">Precio sujeto a cambio</p>
-            </div>
-        </div>
-        <div className="containerSelectId">
-          <p className="selectTituloId">Presentacion: </p>
-          <select className="selectId">
-            {product.size?.map((obj) => (
-              <option value="obj" className="optionId">
-                {obj}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="containerSelectId">
-          <p className="selectTituloId">Caracteristica: </p>
-          <select className="selectId">
-            {product.colorFlavor?.map((obj) => (
-              <option value="obj" className="optionId">
-                {obj}
-              </option>
-            ))}
-          </select>
-        </div>
+      <div className="ProductSeId">
+        {indice !== 0 && <MdChevronLeft className="slidericon-leftId" onClick={retroceder} />}
+          {productosActual.map((item) => (  
+            <Product item={item} key={item.id}/>
+          ))}
+        {indice + 4 < filteredProducts.length && (<MdChevronRight className="slidericon-rightId" onClick={avanzar} />)}
       </div>
     </div>
-    <div className="ProductSeId">
-      {indice !== 0 && <MdChevronLeft className="slidericon-leftId" onClick={retroceder} />}
-        {productosActual.map((item) => (  
-          <Product item={item} key={item.id}/>
-        ))}
-      {indice + 4 < filteredProducts.length && (<MdChevronRight className="slidericon-rightId" onClick={avanzar} />)}
-    </div>
-  </div>
+    </>
 );
 };
 

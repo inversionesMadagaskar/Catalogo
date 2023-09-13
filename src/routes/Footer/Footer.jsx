@@ -17,10 +17,10 @@ const Footer = () => {
                 <h1 className='contactoListaFoot'>CONTACTO</h1>
                 <ul className='ContactoFoot'>
                     <Link to='https://instagram.com/mimadagaskar?igshid=MzRlODBiNWFlZA==' className='linkFoot' target="_blank">
-                        <li className='listaFoot'><img className='iconoFooter' src={ig} alt=''></img><p>mimadagaskar</p></li>
+                        <li className='listaFoot'><img className='iconoFooter' src={ig} alt=''></img><p>@mimadagaskar</p></li>
                     </Link>
                     <Link to='https://www.tiktok.com/@mimadagaskar?_t=8dvsCfUvNe1&_r=1' className='linkFoot' target="_blank">
-                        <li className='listaFoot'><img className='iconoFooter' src={tiktok} alt=''></img><p>mimadagaskar</p></li>
+                        <li className='listaFoot'><img className='iconoFooter' src={tiktok} alt=''></img><p>@mimadagaskar</p></li>
                     </Link>
                     <li className='listaFoot'>
                         <Link to='https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F584144250547&e=AT2AEg8u5Fh4sjWS6aM94jJhFnynyhXaG500HHyCy5Tm2EMgQ7S_jYnI5hFmnU6kWEA7idNwCcMJB4r58_c8DpZiOVA5BJLZFspw2qs' className='linkFoot' target="_blank">
@@ -30,7 +30,7 @@ const Footer = () => {
                             <Link to='https://api.whatsapp.com/send/?phone=584144250547&text&type=phone_number&app_absent=0' className='listaContFoot' target="_blank">
                                 <p>0414-4250547</p>
                             </Link>
-                            <Link to='https://api.whatsapp.com/send/?phone=584244369887&text&type=phone_number&app_absent=0' className='listaContFoot' target="_blank">
+                            <Link to='https://api.whatsapp.com/send?phone=584244369887&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20producto' className='listaContFoot' target="_blank">
                                 <p>0424-4369887</p>
                             </Link>
                         </div>
