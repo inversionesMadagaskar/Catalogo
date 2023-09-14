@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Catalogo/static/css/main.7b480f3b.css",
-    "main.js": "/Catalogo/static/js/main.2b6a7174.js",
+    "main.css": "/Catalogo/static/css/main.ba256e32.css",
+    "main.js": "/Catalogo/static/js/main.ee087bd5.js",
     "static/js/496.fc7109f0.chunk.js": "/Catalogo/static/js/496.fc7109f0.chunk.js",
     "static/media/Banner.png": "/Catalogo/static/media/Banner.f496e9106dab3f6418a8.png",
     "static/media/madagaskarLogoBordeBlanco.svg": "/Catalogo/static/media/madagaskarLogoBordeBlanco.3fb9e592cdd357fe979a36e3f788e1a3.svg",
@@ -30,12 +30,12 @@
     "static/media/lupa.svg": "/Catalogo/static/media/lupa.0b0b72631d88e74cc2b86d3401644dd8.svg",
     "static/media/Juguetes.svg": "/Catalogo/static/media/Juguetes.f04f10eaa8bf85ad262521f51a9bd43e.svg",
     "static/media/botonPasar.svg": "/Catalogo/static/media/botonPasar.705e73188b146db9b6913e137912ba62.svg",
-    "main.7b480f3b.css.map": "/Catalogo/static/css/main.7b480f3b.css.map",
-    "main.2b6a7174.js.map": "/Catalogo/static/js/main.2b6a7174.js.map",
+    "main.ba256e32.css.map": "/Catalogo/static/css/main.ba256e32.css.map",
+    "main.ee087bd5.js.map": "/Catalogo/static/js/main.ee087bd5.js.map",
     "496.fc7109f0.chunk.js.map": "/Catalogo/static/js/496.fc7109f0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b480f3b.css",
-    "static/js/main.2b6a7174.js"
+    "static/css/main.ba256e32.css",
+    "static/js/main.ee087bd5.js"
   ]
 }
