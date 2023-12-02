@@ -38,7 +38,7 @@
     .buscarSe{
         position: absolute;
         z-index: 100;
-        top: 263px;
+        top: 267px;
         left: 1080px;
         width: 150px;
         height: 86px;
@@ -517,18 +517,20 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 0px;
         gap: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
         overflow: hidden;
     }
     .slidericon-leftSe, .slidericon-rightSe{
         background: none;
         border-radius: 100%;
         cursor: pointer;
-        width: 20px;
+        width: 18px;
         height: auto;
+        padding: 0;
+        margin: 0;
         color: rgb(82, 82, 82);
     }
     .slidericon-leftSe{

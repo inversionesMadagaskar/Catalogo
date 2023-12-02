@@ -73,7 +73,7 @@ const Search = () => {
   //Obtener productos
   useEffect(() =>{
     const peticionGet=async()=>{
-      await axios.get(`https://apimadagaskar-2r5v-dev.fl0.io/api/products`)
+      await axios.get(`https://apimadagaskar-dev-nbgm.1.us-1.fl0.io/api/products`)
       .then(response=>{
         setProducts(response.data);
         setProduct(response.data);

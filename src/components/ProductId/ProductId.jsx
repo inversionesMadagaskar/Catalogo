@@ -102,7 +102,7 @@ const ProductId = () => {
   useEffect(() => {
     const peticionGet = async () => {
       try {
-        const response = await axios.get(`https://apimadagaskar-2r5v-dev.fl0.io/api/products`);
+        const response = await axios.get(`https://apimadagaskar-dev-nbgm.1.us-1.fl0.io/api/products`);
         setProducts(response.data);
       } catch (error) {
         console.log(error);
@@ -168,7 +168,7 @@ const ProductId = () => {
                 ))}
                 <p className="priceProductId">{product.price}$</p>
                 <p className="priceTwoProductId">{product.priceTwo}</p>
-                <Link to={`https://api.whatsapp.com/send?phone=584244369887&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20${encodeURIComponent(product.title)}%20${encodeURIComponent(window.location.href)}`} target="_blank" className="linkId"><button className="dispoButtonProductId">Preguntar disponibilidad</button></Link>
+                <Link to={`https://api.whatsapp.com/send?phone=584244369887&text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20${product.title}%20${product.subtitle}`} target="_blank" className="linkId"><button className="dispoButtonProductId">Preguntar disponibilidad</button></Link>
                 <p className="dispoProductId">Precio sujeto a cambio</p>
               </div>
           </div>

@@ -76,7 +76,7 @@ const Products = ( ) => {
     const getProducts = async () => {
       try {
         const res = await axios.get(
-          cat ? `https://apimadagaskar-2r5v-dev.fl0.io/api/products?category=${cat}` : 'https://apimadagaskar-2r5v-dev.fl0.io/api/products'
+          cat ? `https://apimadagaskar-dev-nbgm.1.us-1.fl0.io/api/products?category=${cat}` : 'https://apimadagaskar-dev-nbgm.1.us-1.fl0.io/api/products'
         );
         setProducts(res.data);
         setPaginaActual(1); // Restablecer la página actual a 1

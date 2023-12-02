@@ -25,7 +25,7 @@ const Recomend = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('https://apimadagaskar-b588-dev.fl0.io/api/products');
+        const response = await axios.get('https://apimadagaskar-dev-nbgm.1.us-1.fl0.io/api/products');
         setProducts(response.data);
       } catch (error) {
         console.log(error);
